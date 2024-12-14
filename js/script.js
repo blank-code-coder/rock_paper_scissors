@@ -1,3 +1,6 @@
+const rockButton =  document.querySelector('.rock');
+const paperButton =  document.querySelector('.paper');
+const scissorsButton =  document.querySelector('.scissors');
 
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3);
@@ -41,12 +44,12 @@ function getHumanChoice() {
     }
 
   
-    for (let i = 0; i < 5; i++) {
-        const humanSelection = getHumanChoice();
-        const computerSelection = getComputerChoice();
-        console.log(playRound(humanSelection, computerSelection));
-        console.log(`Score: Human ${humanScore}, Computer ${computerScore}`);
-    }
+    // for (let i = 0; i < 5; i++) {
+    //     const humanSelection = getHumanChoice();
+    //     const computerSelection = getComputerChoice();
+    //     console.log(playRound(humanSelection, computerSelection));
+    //     console.log(`Score: Human ${humanScore}, Computer ${computerScore}`);
+    // }
 
    
     if (humanScore > computerScore) {
